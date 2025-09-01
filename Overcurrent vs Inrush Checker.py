@@ -22,7 +22,7 @@ def calc_curve(TMS, pickup, mode):
     t = np.where(I >= I_flat, t_flat, t)
     return t, I_flat, t_flat
 
-st.title("Relay Operating Time Calculator due to Transformer Inrush Current")
+st.title("Overcurrent Relay Operating Time Calculator due to Transformer Inrush Current")
 
 col1, col2 = st.columns(2)
 
