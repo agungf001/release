@@ -27,11 +27,11 @@ st.title("Overcurrent Relay Operating Time Calculator due to Transformer Inrush 
 col1, col2 = st.columns(2)
 
 with col1:
-    TMS = st.slider("Relay TMS", 0.05, 10.0, 0.28, 0.01)
-    pickup = st.slider("Relay Pickup (A)", 100, 5000, 1050, 10)
+    TMS = st.slider("Relay TMS", 0.05, 10.0, 0.35, 0.01)
+    pickup = st.slider("Relay Pickup (A)", 100, 5000, 150, 10)
 with col2:
-    I_init = st.slider("Peak Inrush Current (A)", 100, 10000, 10000, 10)
-    Tau = st.slider("Inrush Time Constant (s)", 0.1, 3.0, 0.8, 0.1)
+    I_init = st.slider("Peak Inrush Current (A)", 100, 10000, 700, 10)
+    Tau = st.slider("Inrush Time Constant (s)", 0.1, 3.0, 2.4, 0.1)
 
 mode = st.radio("IEC Relay Curves:", list(curve_params.keys()), horizontal=True)
 
